@@ -1,0 +1,11 @@
+.intro .contact_page p{
+	font-family: Effra,"Times New Roman",Times,serif;
+    color: #3C3C3C;
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+.intro .contact_page p span{
+	font-family: Effra,"Times New Roman",Times,serif;
+    color: #434343;
+    font-size: 1.2vw;
+}
