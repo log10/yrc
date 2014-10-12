@@ -1,11 +1,31 @@
+.contact_tab{
+	width: 95%;
+}
+.contact_tab tr td{
+	width: 50%;
+}
+.contact_tab tr td:nth-child(2){
+	padding-left: 7vw;
+}
+.contact_tab tr td:nth-child(1) .intro{
+	top: -11vh;
+	position: relative;
+}
 .intro .contact_page p{
-	font-family: Effra,"Times New Roman",Times,serif;
+	font-family: Sans-Serif,Effra,"Times New Roman",Times,serif;
     color: #3C3C3C;
     font-size: 1.5vw;
-    font-weight: bold;
+    font-weight: 100;
 }
 .intro .contact_page p span{
 	font-family: Effra,"Times New Roman",Times,serif;
     color: #434343;
     font-size: 1.2vw;
+}
+.container{
+	left: 2vw;
+	width: 100%;
+}
+.footer{
+	left: -6vw;
 }

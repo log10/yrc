@@ -37,16 +37,16 @@ var home= {
             left=temp;
             var time1=setTimeout(function(){
                 $(left).css({
-                    top: '16%',
+                    top: '12%',
                     left: '16%'
                 });
                 $(center_left).css({
-                    top: '21%',
+                    top: '16%',
                     left: '31%'
                 });
                 $(center).css({
-                    top: '25%',
-                    left: '48%',
+                    top: '20%',
+                    left: '47.5%',
                     'background-image': 'url('+select[center]+')'
                 });
                 var time2=setTimeout(function(){
@@ -64,13 +64,13 @@ var home= {
             center_left=center;
             center=temp;
             $(center_left).css({
-                top: '21%',
+                top: '16%',
                 left: '31%',
                 'background-image': 'url('+deselect[center_left]+')'
             });
             $(center).css({
-                top: '25%',
-                left: '48%',
+                top: '20%',
+                left: '47.5%',
                 'background-image': 'url('+select[center]+')'
             });
         }
@@ -87,16 +87,16 @@ var home= {
             right=temp;
             var time1=setTimeout(function(){
                 $(right).css({
-                    top: '16%',
+                    top: '12%',
                     left: '80%'
                 });
                 $(center_right).css({
-                    top: '21%',
+                    top: '16%',
                     left: '65%'
                 });
                 $(center).css({
-                    top: '25%',
-                    left: '48%',
+                    top: '20%',
+                    left: '47.5%',
                     'background-image': 'url('+select[center]+')'
                 });
                 var time2=setTimeout(function(){
@@ -113,13 +113,13 @@ var home= {
             center_right=center;
             center=temp;
             $(center_right).css({
-                top: '21%',
+                top: '16%',
                 left: '65%',
                 'background-image': 'url('+deselect[center_right]+')'
             });
             $(center).css({
-                top: '25%',
-                left: '48%',
+                top: '20%',
+                left: '47.5%',
                 'background-image': 'url('+select[center]+')'
             });
         }
@@ -203,7 +203,7 @@ var home= {
                 var time=setTimeout(function(){
                     $( ".container" ).load( "gallery.html" );
                     $('.container').css({
-                        top: '0px'
+                        top: '28%'
                     });
                     clearTimeout(time);
                 },800);
@@ -215,7 +215,7 @@ var home= {
                 var time=setTimeout(function(){
                     $( ".container" ).load( "about.html" );
                     $('.container').css({
-                        top: '0px'
+                        top: '28%'
                     });
                     clearTimeout(time);
                 },800);
@@ -227,7 +227,7 @@ var home= {
                 var time=setTimeout(function(){
                     $( ".container" ).load( "activities.html" );
                     $('.container').css({
-                        top: '0px'
+                        top: '28%'
                     });
                     clearTimeout(time);
                 },800);
@@ -239,7 +239,7 @@ var home= {
                 var time=setTimeout(function(){
                     $( ".container" ).load( "contacts.html" );
                     $('.container').css({
-                        top: '0px'
+                        top: '28%'
                     });
                     clearTimeout(time);
                 },800);
@@ -248,28 +248,46 @@ var home= {
                 $('.container').css({
                     top: '-1200px'
                 });
-                if(flag){
-                    var index=0;
-                    setInterval(function() {
-                        $(".slider img").attr("src","css/images/pic"+index+".svg").fadeIn(1000);
-                        $(".caption").html(caption[index]);
-                        index=(index+1)%4;
-                        var time=setTimeout(function() {
-                            $(".slider img").fadeOut(1000);
-                            clearTimeout(time);
-                        }, 1600);
-                    },2600);
-                    flag=false;
-                }
                 var time=setTimeout(function(){
                     $( ".container" ).load( "index.html" );
                     $('.container').css({
-                        top: '0px'
+                        top: '28%'
                     });
                     clearTimeout(time);
                 },800);
         	});
             $( ".index" ).trigger( "click" );
+            //motto events
+            $('.home').on('mouseover','.friendship',function() {
+                $('.friendship').css({
+                    'background-image':'url("css/images/friendship_w.svg")'
+                });
+            });
+            $('.home').on('mouseover','.service',function() {
+                $('.service').css({
+                    'background-image':'url("css/images/service_w.svg")'
+                });
+            });
+            $('.home').on('mouseover','.health',function() {
+                $('.health').css({
+                    'background-image':'url("css/images/health_w.svg")'
+                });
+            });
+            $('.home').on('mouseout','.friendship',function() {
+                $('.friendship').css({
+                    'background-image':'url("css/images/friendship_b.svg")'
+                });
+            });
+            $('.home').on('mouseout','.service',function() {
+                $('.service').css({
+                    'background-image':'url("css/images/service_b.svg")'
+                });
+            });
+            $('.home').on('mouseout','.health',function() {
+                $('.health').css({
+                    'background-image':'url("css/images/health_b.svg")'
+                });
+            });
         });
     }	
 };
