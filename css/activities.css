@@ -1,0 +1,35 @@
+.act{
+	font-family: "elena-web-basic","Georgia","Times New Roman",Times,serif;
+	margin-left: 20%;
+	margin-right: 25%;
+	top: 2vh;
+	position: relative;
+}
+.act  h2{
+	color: #0071BA;
+    font-size: 2.2vw;
+    font-weight: 100;
+    font-family: Arial;
+    text-transform: capitalize;
+	text-align: left;
+}
+.act .content{
+	color: #3C3C3C;
+	font-size: 1.5vw;
+	font-weight: 100;
+}
+.act h1{
+	font-size: 2.9vw;
+    font-family: Arial;
+    text-transform: capitalize;
+    color: rgb(51,51,51);
+    font-weight: 100;
+}
+.song{
+	font-family: "Comic Sans", "Comic Sans MS", cursive;
+}
+.act li{
+	color: #3C3C3C;
+	font-size: 1.4vw;
+	font-weight: 100;
+}

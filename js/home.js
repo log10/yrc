@@ -210,7 +210,7 @@ var home= {
             });
         	$('.home').on('click','.about',function(){
                 $('.container').css({
-                    top: '-1200px'
+                    top: '-2500px'
                 });
                 var time=setTimeout(function(){
                     $( ".container" ).load( "about.html" );
@@ -222,7 +222,7 @@ var home= {
         	});
         	$('.home').on('click','.activities',function(){
                 $('.container').css({
-                    top: '-1200px'
+                    top: '-2300px'
                 });
                 var time=setTimeout(function(){
                     $( ".container" ).load( "activities.html" );
