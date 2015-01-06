@@ -10,7 +10,27 @@
 		}
 		.gallery_div2{
 			position: relative;
-			top: 2vh;
+			top: 8vh;
+			height: 37vh;
+		}
+		.gallery_div3{
+			position: relative;
+			top: 50vh;
+			height: 37vh;
+		}
+		.gallery_div4{
+			position: relative;
+			top: 90vh;
+			height: 37vh;
+		}
+		.gallery_div5{
+			position: relative;
+			top: 130vh;
+			height: 37vh;
+		}
+		.gallery_div6{
+			position: relative;
+			top: 170vh;
 			height: 37vh;
 		}
 		.wrapper{
@@ -19,7 +39,7 @@
 			left: -16vw;
 		}
 		.footer{
-			top:37vh;
+			top:207vh;
 		}
 		html, body {height: 100%;padding: 0;margin: 0;}body {background: #f9f9f3;}body * {font-family: Arial, Geneva, SunSans-Regular, sans-serif;font-size: 14px;color: #222;line-height: 20px;}.wrapper {height: 100%;width: 100%;min-height: 650px;min-width: 900px;padding-top: 1px;}.slider {margin: 100px 0 0 0;height: 340px;overflow: hidden;background: url("css/images/ajax-loader.gif") center center no-repeat;}.slider .slide {position: relative;display: none;height: 340px;float: left;background-position: center right;cursor: pointer;border-left: 1px solid #fff;}.slider .slide:first-child {border: none;}.slider .slide.active {cursor: default;}.slider .slide-block {position: absolute;left: 39.5vw;bottom: -1vh;display: inline-block;width: 435px;background-color: #fff;background-color: rgba(255,255,255, 0.8);	padding: 20px;font-size: 14px;color: #134B94;border: 1px solid #fff;overflow: hidden;border-radius: 4px;}.slider .slide-block h4 {font-size: 36px;font-weight: bold;margin: 0 0 10px 0;line-height: 1;}
 			.slider .slide-block p {
@@ -37,34 +57,147 @@
 		$(function(){$('.slider').carouFredSel({width:'100%',align:false,items: 3,items:{width: $('.wrapper').width() * 0.15,height: 500,visible: 1,minimum: 1},scroll:{items: 1,timeoutDuration : 5000,onBefore: function(data){var currentSlide=$('.slide.active',this),nextSlide=data.items.visible,_width=$('.wrapper').width();currentSlide.stop().animate({width:_width*0.15});currentSlide.removeClass('active');data.items.old.add(data.items.visible).find('.slide-block').stop().fadeOut();nextSlide.addClass('active');nextSlide.stop().animate({width:_width*0.7});},onAfter:function(data){data.items.visible.last().find('.slide-block').stop().fadeIn();}},onCreate:function(data){var newitems=$('.slide',this).clone(true),_width=$('.wrapper').width();$(this).trigger('insertItem',[newitems,newitems.length,false]);$('.slide',this).fadeIn();$('.slide:first-child',this).addClass('active');$('.slide',this).width(_width*0.15);$('.slide:first-child',this).animate({width:_width*0.7});$(this).find('.slide-block').hide();$(this).find('.slide.active.slide-block').stop().fadeIn();}});$('.slider').children().click(function(){$('.slider').trigger('slideTo',[this]);});$(window).resize(function(){var slider=$('.slider'),_width=$('.wrapper').width();slider.find('.slide').width(_width*0.15);slider.find('.slide.active').width(_width*0.7);slider.trigger('configuration',['items.width',_width*0.15]);});});	
 </script>
 <div class="gallery_intro">
-	<h1>Inauguration</h1>
+	<h1>Annual Camp</h1>
 </div>
 <div class="wrapper">
 	<div class="slider">
-		<div class="slide" style="background-image: url('css/images/pic0.svg');background-repeat:no-repeat;background-size:contain">
+		<div class="slide" style="background-image: url('images/annualcamp/1.jpg');background-repeat:no-repeat;background-size:contain">
 			<div class="slide-block">
 				<!--h4><a href = "#" style="color:red">pic1</a></h4-->
-				<p>Henry Dunant(1828-1910)<br>Founder of the Red Cross</p>
+				<p>Camp Inauguration</p>
 			</div>
 		</div>
 		
-		<div class="slide" style="background-image: url('css/images/pic1.svg');background-repeat:no-repeat;background-size:contain">
+		<div class="slide" style="background-image: url('images/annualcamp/2.jpg');background-repeat:no-repeat;background-size:contain">
 			<div class="slide-block">
 				<!--h4><a href = "#" style="color:red">pic2</a></h4-->
-				<p>Friendship</p>
+				<p>Tree Plantation</p>
 			</div>
 		</div>
-		<div class="slide" style="background-image: url('css/images/pic2.svg');background-repeat:no-repeat;background-size:contain">
+		<div class="slide" style="background-image: url('images/annualcamp/3.jpg');background-repeat:no-repeat;background-size:contain">
 			<div class="slide-block">
 				<!--h4><a href = "#" style="color:red">pic3</a></h4-->
-				<p>Service</p>
+				<p>Tree Plantation</p>
 			</div>
 		</div>
-
-		<div class="slide" style="background-image: url('css/images/pic3.svg');background-repeat:no-repeat;background-size:contain">
+		<div class="slide" style="background-image: url('images/annualcamp/17.jpg');background-repeat:no-repeat;background-size:contain">
 			<div class="slide-block">
-				<!--h4><a href = "#" style="color:red">pic4</a></h4-->
-				<p>Health</p>
+				<p>Tree Plantation</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/4.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Awareness Marching</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/5.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Awareness Marching</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/23.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Awareness Marching</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/18.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Lectures</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/6.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Lectures</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/24.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Lectures</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/7.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>School Visit</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/8.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>YRC volunteers Teaching Kids</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/9.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Drawing Sessions</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/10.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Fun Games</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/11.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Fun Games</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/12.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Science</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/13.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Door To Door Survey</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/26.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Door To Door Survey</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/27.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Door To Door Survey</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/14.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Door To Door Survey</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/15.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Door To Door Survey</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/16.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Cleaning</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/25.png');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>First Aid Training</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/19.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Emergency Training</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/20.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Street Play</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/21.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Street Play</p>
+			</div>
+		</div>
+		<div class="slide" style="background-image: url('images/annualcamp/22.jpg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide-block">
+				<p>Group Photo</p>
 			</div>
 		</div>
 	</div>
@@ -72,70 +205,197 @@
 <br>
 <div class="gallery_div1">
 	<div class="gallery_intro">
-		<h1>Vivega'14</h1>
+		<h1>Inauguration</h1>
 	</div>
 	<div class="wrapper">
 		<div class="slider">
-			<div class="slide" style="background-image: url('css/images/pic0.svg');background-repeat:no-repeat;background-size:contain">
-				<div class="slide-block">
-					<!--h4><a href = "#" style="color:red">pic1</a></h4-->
-					<p>Henry Dunant(1828-1910)<br>Founder of the Red Cross</p>
-				</div>
+			<div class="slide" style="background-image: url('images/inauguration/1.jpg');background-repeat:no-repeat;background-size:contain">
 			</div>
-
-			<div class="slide" style="background-image: url('css/images/pic1.svg');background-repeat:no-repeat;background-size:contain">
-				<div class="slide-block">
-					<!--h4><a href = "#" style="color:red">pic2</a></h4-->
-					<p>Friendship</p>
-				</div>
+			<div class="slide" style="background-image: url('images/inauguration/2.jpg');background-repeat:no-repeat;background-size:contain">
 			</div>
-			<div class="slide" style="background-image: url('css/images/pic2.svg');background-repeat:no-repeat;background-size:contain">
-				<div class="slide-block">
-					<!--h4><a href = "#" style="color:red">pic3</a></h4-->
-					<p>Service</p>
-				</div>
+			<div class="slide" style="background-image: url('images/inauguration/3.jpg');background-repeat:no-repeat;background-size:contain">
 			</div>
-
-			<div class="slide" style="background-image: url('css/images/pic3.svg');background-repeat:no-repeat;background-size:contain">
-				<div class="slide-block">
-					<!--h4><a href = "#" style="color:red">pic4</a></h4-->
-					<p>Health</p>
-				</div>
+			<div class="slide" style="background-image: url('images/inauguration/4.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/inauguration/5.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/inauguration/6.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/inauguration/7.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/inauguration/8.jpg');background-repeat:no-repeat;background-size:contain">
 			</div>
 		</div>
 	</div>
 </div>
 <div class="gallery_div2">
 	<div class="gallery_intro">
-		<h1>Weekly Activities</h1>
+		<h1>Independence Day</h1>
 	</div>
 	<div class="wrapper">
 		<div class="slider">
-			<div class="slide" style="background-image: url('css/images/pic0.svg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide" style="background-image: url('images/independenceday/2.jpg');background-repeat:no-repeat;background-size:contain">
 				<div class="slide-block">
-					<!--h4><a href = "#" style="color:red">pic1</a></h4-->
-					<p>Henry Dunant(1828-1910)<br>Founder of the Red Cross</p>
+					<p>YRC Volunteers</p>
 				</div>
 			</div>
-
-			<div class="slide" style="background-image: url('css/images/pic1.svg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide" style="background-image: url('images/independenceday/1.jpg');background-repeat:no-repeat;background-size:contain">
 				<div class="slide-block">
-					<!--h4><a href = "#" style="color:red">pic2</a></h4-->
-					<p>Friendship</p>
+					<p>Vice Chancellor</p>
 				</div>
 			</div>
-			<div class="slide" style="background-image: url('css/images/pic2.svg');background-repeat:no-repeat;background-size:contain">
+			<div class="slide" style="background-image: url('images/independenceday/3.jpg');background-repeat:no-repeat;background-size:contain">
 				<div class="slide-block">
-					<!--h4><a href = "#" style="color:red">pic3</a></h4-->
-					<p>Service</p>
+					<p>Best Volunteers Of 2014</p>
 				</div>
 			</div>
-
-			<div class="slide" style="background-image: url('css/images/pic3.svg');background-repeat:no-repeat;background-size:contain">
+		</div>
+	</div>
+</div>
+<div class="gallery_div3">
+	<div class="gallery_intro">
+		<h1>Sukaraksha</h1>
+	</div>
+	<div class="wrapper">
+		<div class="slider">
+			<div class="slide" style="background-image: url('images/sukaraksha/1.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/sukaraksha/2.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/sukaraksha/3.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/sukaraksha/4.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/sukaraksha/5.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/sukaraksha/6.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/sukaraksha/7.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="gallery_div4">
+	<div class="gallery_intro">
+		<h1>Vivega'14</h1>
+	</div>
+	<div class="wrapper">
+		<div class="slider">
+			<div class="slide" style="background-image: url('images/Vivega14/0.jpg');background-repeat:no-repeat;background-size:contain">
 				<div class="slide-block">
-					<!--h4><a href = "#" style="color:red">pic4</a></h4-->
-					<p>Health</p>
+					<p>Welcome</p>
 				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/01.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Lighting Kuthuvilakku</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/02.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Inauguration</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/03.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Drawing</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/04.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Drawing</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/05.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Drawing</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/09.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Drawing</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/06.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Just A Minute 6th-9th</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/08.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Just A Minute 10th-12th</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/07.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Quizzes</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/10.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/11.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/12.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Madhan Karky</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/13.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Vivega'14 Runners</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/14.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Vivega'14 Winners</p>
+				</div>
+			</div>
+			<div class="slide" style="background-image: url('images/Vivega14/15.jpg');background-repeat:no-repeat;background-size:contain">
+				<div class="slide-block">
+					<p>Vivega'14 Sponsors</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="gallery_div5">
+	<div class="gallery_intro">
+		<h1>Weekly Activity</h1>
+	</div>
+	<div class="wrapper">
+		<div class="slider">
+			<div class="slide" style="background-image: url('images/weeklyactivity/1.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/weeklyactivity/2.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/weeklyactivity/3.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/weeklyactivity/4.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="gallery_div6">
+	<div class="gallery_intro">
+		<h1>White Cane Day</h1>
+	</div>
+	<div class="wrapper">
+		<div class="slider">
+			<div class="slide" style="background-image: url('images/whitecaneday/1.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/whitecaneday/2.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/whitecaneday/3.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/whitecaneday/4.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/whitecaneday/5.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/whitecaneday/6.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/whitecaneday/7.jpg');background-repeat:no-repeat;background-size:contain">
+			</div>
+			<div class="slide" style="background-image: url('images/whitecaneday/8.jpg');background-repeat:no-repeat;background-size:contain">
 			</div>
 		</div>
 	</div>
